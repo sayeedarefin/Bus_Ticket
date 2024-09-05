@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input id="seat1" onclick="addBGbyID(this.id)" type="checkbox" aria-label="A1" class="btn btn-outline btn-lg" />
+<script>
+    function addBGbyID(elementId) {
+    const element = document.getElementById(elementId);
+    if (element.checked) {
+        element.classList.add('bg-[#1DD100]'); // Add green background if checked
+    } else {
+        element.classList.remove('bg-[#1DD100]'); // Remove green background if unchecked
+    }
+}
+
+</script>
+    
+</body>
+</html>
